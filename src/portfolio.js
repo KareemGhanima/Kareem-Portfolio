@@ -1,6 +1,8 @@
 /* Change this file to get your personal Portfolio */
 
 // To change portfolio colors globally go to the  _globalColor.scss file
+// cd /d "C:\Users\Pc\Downloads\developerFolio-master"
+//npm start
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
@@ -20,26 +22,23 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Kareem Ghanima",
+  title: "Hi, I'm Kareem",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A Mechatronics Engineering student focused on Industrial Automation, Artificial Intelligence, Robotics, Control Systems, and Computer Vision. ⚙️🤖"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1YVVDLu5b_ReaGHj1PgY_KzwzPXjU8CLo/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/KareemGhanima",
+  linkedin: "https://www.linkedin.com/in/kareemghanima/",
+  gmail: "kareemwalidghanima@gmail.com",
+  
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,100 +48,74 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle:
+    "MECHATRONICS ENGINEERING STUDENT FOCUSED ON INDUSTRIAL AUTOMATION, ROBOTICS & AI",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
-  ],
+  emoji(
+    "⚙️ Industrial Automation, PLC Programming, Control Systems & SCADA"
+  ),
+  emoji(
+    "🤖 Robotics, Embedded Systems, Sensors & Actuators"
+  ),
+  emoji(
+    "👁️ Computer Vision, Image Processing & AI for Mechatronics"
+  ),
+],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
+softwareSkills: [
+  {
+    skillName: "Python",
+    fontAwesomeClassname: "fab fa-python",
+  },
+  {
+    skillName: "C",
+    fontAwesomeClassname: "fas fa-code",
+  },
+  {
+    skillName: "PLC / TIA Portal",
+    fontAwesomeClassname: "fas fa-industry",
+  },
+  {
+    skillName: "OpenCV",
+    fontAwesomeClassname: "fas fa-eye",
+  },
+  {
+    skillName: "Arduino",
+    fontAwesomeClassname: "fas fa-microchip",
+  },
+  {
+    skillName: "SolidWorks",
+    fontAwesomeClassname: "fas fa-cube",
+  },
+  {
+    skillName: "LabVIEW",
+    fontAwesomeClassname: "fas fa-chart-line",
+  },
+],
   display: true // Set false to hide this section, defaults to true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName:
+        "Egypt-Japan University of Science and Technology (E-JUST)",
+      logo: require("./assets/images/download.png"),
+      subHeader: "B.Sc. Mechatronics Engineering",
+      duration: "2023 - Present",
+      desc:
+        "Mechatronics Engineering student with a focus on industrial automation, robotics, control systems and AI.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Current academic focus: Mechatronics Engineering",
+        "CGPA: 3.25",
+        "Relevant Coursework: Project-Based Learning (PBL), Automatic Control, Programmable Logic Controllers, Robotics"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -150,53 +123,108 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
+      Stack: "Industrial Automation",
       progressPercentage: "60%"
+    },
+    {
+      Stack: "Robotics & Embedded Systems",
+      progressPercentage: "50%"
+    },
+    {
+      Stack: "Python / Computer Vision / AI",
+      progressPercentage: "75%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
+  displayCodersrank: false
+}; // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+
 
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true,
+
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Esp Field Engineer Intern",
+      company: "Levare International Limited",
+      companylogo: require("./assets/images/levare_international_limited_logo.jpg"),
+      date: "2 August 2026 – 6 August 2026",
+      desc: "Engineering training focused on artificial lift systems, industrial automation, and oil & gas applications.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Gained exposure to artificial lift technologies and Electric Submersible Pump (ESP) systems",
+        "Explored motors, pumps, sensors, actuators, and industrial control concepts",
+        "Developed practical understanding of oil & gas engineering and artificial lift applications"
       ]
     },
+
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Service Engineer Intern",
+      company: "MCV – Manufacturing Commercial Vehicles",
+      date: "3 August 2025 – 14 August 2025",
+      companylogo: require("./assets/images/download.jpg"),
+      desc: "Practical training in aftersales service, vehicle diagnostics, maintenance workflows, and technical support.",
+      descBullets: [
+        "Assisted in supervising and optimizing maintenance workflows within the aftersales workshop",
+        "Conducted vehicle diagnostics, documented fault reports, and supported troubleshooting of technical issues",
+        "Supported communication between customers and technical teams for complex repair cases",
+        "Participated in spare parts inventory, technician development, and warranty-related processes"
+      ]
     },
+
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Mechatronics Engineer Intern",
+      company: "Abu Qir Engineering Industries Company",
+      date: "13 July 2025 – 24 July 2025",
+      companylogo: require("./assets/images/ShowImage.png"),
+      desc: "Hands-on industrial training focused on PLC programming, control systems, production lines, and troubleshooting.",
+      descBullets: [
+        "Learned the fundamentals of PLC programming and industrial control systems",
+        "Gained hands-on experience monitoring and maintaining production lines in workshop environments",
+        "Identified system defects and performed real-time troubleshooting to support production efficiency",
+        "Prepared technical reports documenting faults and proposed improvements"
+      ]
+    },
+
+    {
+      role: "AI & Machine Learning Engineer Intern",
+      company: "DEPI – Digital Egypt Pioneers Initiative",
+      date: "29 June 2025 – 2 December 2025",
+      companylogo: require("./assets/images/20250203T101527926.png"),
+      desc: "Technical training in Artificial Intelligence and Machine Learning with practical projects using Microsoft Azure.",
+      descBullets: [
+        "Developed practical skills in Python, machine learning, deep learning, NLP, and computer vision",
+        "Worked with data preprocessing, visualization, model training, and evaluation",
+        "Gained hands-on experience with MLOps and machine learning deployment using Microsoft Azure",
+        "Completed practical projects and an end-to-end capstone project on Azure"
+      ]
+    },
+
+    {
+      role: "Control System Engineer",
+      company: "Egyptian Petrochemicals Company (EPC)",
+      companylogo: require("./assets/images/images.png"),
+      date: "30 August 2026 – 10 september 2026",
+      desc: "Industrial training focused on the Vinyl Chain production process, process control, and plant operations.",
+      descBullets: [ 
+        "Explored Chlorine, VCM, and PVC production processes", 
+        "Studied EDC cracking and VCM production at industrial scale", 
+        "Gained exposure to industrial control and safety systems" 
+      ]
+    },
+
+    { role: "GCI World 2026 – Data Science & AI Program", 
+     company: "Matsuo-Iwasawa Laboratory, The University of Tokyo",
+     date: "17 September 2026 – 17 December 2026", 
+     companylogo: require("./assets/images/imagesss.jpg"),
+     desc: "Three-month global program focused on Data Science, AI, and practical applications of data in business.", 
+     descBullets: [ 
+      "Developing practical skills in Python, NumPy, Pandas, and data visualization", 
+      "Learning supervised and unsupervised machine learning, SQL, and time series analysis",
+       "Participating in a data science competition and a final practical assignment" ]
     }
   ]
 };
@@ -205,102 +233,172 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+  showGithubProfile: true, // Set true or false to show Contact profile using Github, defaults to true
   display: true // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Featured Projects",
+
+  subtitle:
+    "MECHATRONICS PROJECTS IN ROBOTICS, INDUSTRIAL AUTOMATION, COMPUTER VISION & EMBEDDED SYSTEMS",
+
   projects: [
+
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Autonomous Mobile Manipulator Robot",
+
+      image: require("./assets/images/Gemini_Generated_Image_3y5xz63y5xz63y5x.png"),
+
+      projectDesc:
+        "An autonomous robotic system combining mobile navigation, computer vision and a robotic manipulator for object detection, sorting and delivery.",
+
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View Project",
+          url: "https://drive.google.com/drive/folders/1_WfBbzTRL5Jp0P5iw77fr_4pLcflBoNx?usp=drive_link"
         }
-        //  you can add extra buttons here.
       ]
     },
+
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/WhatsApp Image 2026-01-01 at 9.10.53 AM (1).jpeg"),
+
+      projectName: "Bluetooth Controlled Car with Obstacle Detection",
+
+      projectDesc:
+        "A Bluetooth-controlled robotic car integrating wireless control, ultrasonic obstacle detection, and autonomous obstacle avoidance using an embedded microcontroller.",
+
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View Project",
+          url: "https://drive.google.com/drive/folders/1qaarAFGrGY4G8ec9pKaXoxr6xmVM9NoY?usp=drive_link"
+        }
+      ]
+    },
+   
+    {
+      image: require("./assets/images/1784921161707.jpg"),
+
+      projectName: "Smart Temperature Control System",
+
+      projectDesc:
+        "A closed-loop temperature control system using Arduino, DS18B20, and LabVIEW. A Proportional (P) controller adjusts fan speed through PWM based on real-time temperature feedback, while LabVIEW provides live monitoring, visualization, and serial communication.",
+
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://drive.google.com/drive/folders/120FlZ0aze2cPHlhIjMfP8p6jX2UYr4VK?usp=drive_link"
+        }
+      ]
+    },
+
+    {
+      image: require("./assets/images/Screenshot 2026-08-20 163938.png"),
+
+      projectName: "Dc Motor Speed Sensing and Control",
+
+      projectDesc:
+        "An embedded motor control system using ATmega32, an L298 H-Bridge, and an encoder for real-time speed measurement and bidirectional DC motor control. The system displays motor speed on an LCD and supports speed adjustment through user controls.",
+
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://drive.google.com/drive/folders/14o3uIJij4lCwQFoKkL2RqkBbaDjtvlWO?usp=drive_link"
+        }
+      ]
+    },
+
+    {
+      image: require("./assets/images/Screenshot 2025-11-26 232801.png"),
+
+      projectName: "Bone Fracture Detection",
+
+      projectDesc:
+        "An AI-powered computer vision system for detecting and localizing bone fractures in X-ray images using deep learning and image processing techniques.",
+
+      footerLink: [
+        {
+          name: "View Project",
+          url: "https://drive.google.com/drive/folders/1n4v5rJmS8rqr2nTQunRoR0MyL4n9JhEt?usp=drive_link"
         }
       ]
     }
+
   ],
-  display: true // Set false to hide this section, defaults to true
+
+  display: true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: "Achievements & Certifications",
+
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Selected certifications highlighting technical skills in mechanical design, artificial intelligence, and programming.",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "SOLIDWORKS Design Associate (CSWA)",
+
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Industry-recognized certification from Dassault Systèmes validating skills in 3D CAD modeling and mechanical design using SOLIDWORKS.",
+
+      image: require("./assets/images/certified-solidworks-design-associate.png"),
+
+      imageAlt: "SOLIDWORKS Design Associate Certification",
+
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1DClcNFFraw5QVllZt_D9_FlGRO8q2Who/view?usp=drive_link"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Microsoft × Sprints — AI & Machine Learning",
+
+      subtitle:
+        "Completed a 40-hour program focused on artificial intelligence and machine learning fundamentals with practical applications.",
+
+      image: require("./assets/images/Sprintx.jpg"),
+
+      imageAlt: "Microsoft Sprints AI and Machine Learning Certificate",
+
       footerLink: [
-        {name: "Certification", url: ""},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1DKOSLqLcQGkfzqiQZqDFgvqkT4WPcYUq/view?usp=drive_link"
+        }
+      ]
+    },
+
+    {
+      title: "Introduction to Python — DataCamp",
+
+      subtitle:
+        "Completed foundational Python training covering programming fundamentals for data analysis, automation, and machine learning.",
+
+      image: require("./assets/images/Datacamp.png"),
+
+      imageAlt: "DataCamp Introduction to Python Certificate",
+
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://drive.google.com/file/d/1DqSFG3JIdoSYre66nl9t--sjPb1j_O7W/view?usp=drive_link"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+
+  display: true
 };
 
 // Blogs Section
@@ -324,7 +422,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -336,15 +434,16 @@ const talkSection = {
   ),
 
   talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
+  {
+  
+  title: "Mechatronics Engineering at E-JUST",
+  subtitle: "A Student Perspective on Mechatronics and University Life",
+
+  slides_url: "https://www.linkedin.com/posts/activity-7475460437367570432-ywEs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFDGupsByQPJrQlwCdXmrXvWL7V48sjGawM",
+  event_url: "https://www.linkedin.com/posts/activity-7475460437367570432-ywEs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFDGupsByQPJrQlwCdXmrXvWL7V48sjGawM" 
+  }
+],
+display: true};
 
 // Podcast Section
 
@@ -356,7 +455,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -369,18 +468,17 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Let's Connect 🤝"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Interested in Mechatronics, Industrial Automation, Robotics or AI? Feel free to get in touch.",
+  number: "",
+  email_address: "kareemwalidghanima@gmail.com"
 };
-
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
