@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 // cd /d "C:\Users\Pc\Downloads\developerFolio-master"
 //npm start
-
+//Update Kareem portfolio
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
@@ -27,7 +27,7 @@ const greeting = {
   subTitle: emoji(
     "A Mechatronics Engineering student focused on Industrial Automation, Artificial Intelligence, Robotics, Control Systems, and Computer Vision. ⚙️🤖"
   ),
-  resumeLink: `${process.env.PUBLIC_URL}/KareemWalidGhanima_CV.pdf`,
+  resume_url: "https://drive.google.com/file/d/1DClcNFFraw5QVllZt_D9_FlGRO8q2Who/view?usp=drive_link",
   displayGreeting: true
 };
 
