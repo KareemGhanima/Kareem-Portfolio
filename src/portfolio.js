@@ -27,8 +27,7 @@ const greeting = {
   subTitle: emoji(
     "A Mechatronics Engineering student focused on Industrial Automation, Artificial Intelligence, Robotics, Control Systems, and Computer Vision. ⚙️🤖"
   ),
-  resumeLink:
-    `${process.env.PUBLIC_URL}/KareemWalidGhanima_CV.pdf`,
+  resumeLink: `${process.env.PUBLIC_URL}/KareemWalidGhanima_CV.pdf`,
   displayGreeting: true
 };
 
