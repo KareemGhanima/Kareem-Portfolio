@@ -27,7 +27,7 @@ const greeting = {
   subTitle: emoji(
     "A Mechatronics Engineering student focused on Industrial Automation, Artificial Intelligence, Robotics, Control Systems, and Computer Vision. ⚙️🤖"
   ),
-  DOWNLOAD_MY_RESUME_url: "https://drive.google.com/file/d/1DClcNFFraw5QVllZt_D9_FlGRO8q2Who/view?usp=drive_link",
+  resumeLink:"https://drive.google.com/file/d/1YVVDLu5b_ReaGHj1PgY_KzwzPXjU8CLo/view?usp=sharing",
   displayGreeting: true
 };
 
