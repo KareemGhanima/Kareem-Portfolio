@@ -28,8 +28,8 @@ const greeting = {
     "A Mechatronics Engineering student focused on Industrial Automation, Artificial Intelligence, Robotics, Control Systems, and Computer Vision. ⚙️🤖"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1YVVDLu5b_ReaGHj1PgY_KzwzPXjU8CLo/view?usp=drive_link", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    `${process.env.PUBLIC_URL}/KareemWalidGhanima_CV.pdf`,
+  displayGreeting: true
 };
 
 // Social Media Links
